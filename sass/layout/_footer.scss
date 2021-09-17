@@ -1,0 +1,120 @@
+/* стилизация footer */
+.footer{    
+   padding-top: 60px;
+   padding-bottom: 60px;  
+   background: var(--background-hero);
+} 
+.footer .container{
+   display: flex;
+   align-items: baseline;
+}
+
+.logofooter{ 
+   display: block;  
+   margin-bottom: 20px;
+   font-family: Raleway, sans-serif;
+   font-size: 26px;
+   line-height: 1.19;
+   color: var(--white-color);
+   text-decoration: none; 
+   color: var(--accent-color);
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover,
+&:focus{
+   color: var(--accent-color);
+}
+
+&:hover,
+&:focus{
+   color: var(--white-color);
+}
+}
+.item-nav:not(:first-child){
+   margin-top: 10px;
+}
+
+.footer-text{  
+   color:var(--white-color);   
+   font-size: 14px;
+   line-height: 1.71;
+   font-style: normal;
+}
+
+.nav-footer .foter{      
+   color: var(--link-color-footer);
+   font-size: 14px;
+   line-height: 1.71;  
+   text-decoration: none;
+   font-style: normal;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus {
+   color: var(--accent-color);
+}
+}
+.sosial-items{
+   width: 44px;
+   height: 44px;  
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;   
+}
+
+.footer-sosial{   
+   margin-left: 70px; 
+} 
+.icon-social-footer{  
+   fill: var(--white-color)
+}
+.sosial-items{
+   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.appeal-title{ 
+   text-transform: uppercase; 
+   font-weight: bold;
+   font-size: 14px;
+   line-height: 1.14;   
+   color: var(--white-color);
+   margin-bottom: 20px;
+}
+.footer-mail{ 
+   margin-left: 93px;
+
+}
+.fot-mail{  
+   font-size: 16px;
+   line-height: 1.25;
+   padding-left: 16px; 
+   outline: none;
+   background: transparent;
+   width: 358px;
+   height: 50px;
+   border: 1px solid rgba(255, 255, 255, 0.3);
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+   border-radius: 4px;
+
+   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:focus,
+&:hover{
+   border: 1px solid var(--accent-color);
+}
+}
+
+.submit{    
+   font-size: 16px;
+   line-height: 1.87;
+   color: var(--white-color);   
+   width: 200px;
+   height: 50px;
+   padding: 10px 62px 10px 29px;  
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+   cursor: pointer; 
+}
+.icon-submit{
+   position: absolute;
+   padding-left: 10px;
+}

@@ -1,0 +1,48 @@
+/* стилизация section чем мы занимаемся */
+.whatdoing{
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.whatdoing-title{ 
+   margin-bottom: 50px;  
+   color: var(--title-text-color);
+   font-size: 36px;
+   line-height: 1.17;
+   text-align: center;
+}
+.img-doing{
+	display: block;
+	
+}
+.doing-inage{	
+	position: relative;
+	&:not(:last-child){
+		margin-right: 30px;
+	}
+}
+.whatdoing-text{
+	bottom: 0;
+	position: absolute;
+	display: flex;
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	width: 370px;
+	height: 70px;
+	
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;	
+	text-transform: uppercase;
+	background: rgba(47, 48, 58, 0.8);
+	color: var(--white-color)
+	
+
+}
+
+.doing{
+   display: flex;
+   margin-left: auto;  
+   margin-right: auto;   
+}   
