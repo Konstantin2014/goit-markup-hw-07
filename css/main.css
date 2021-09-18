@@ -1,15 +1,4 @@
 @charset "UTF-8";
-:root {
-  --title-text-color:#212121;
-  --accent-color:#2196F3;
-  --text-color:#757575;
-  --link-color-footer:rgba(255, 255, 255, 0.6);
-  --white-color:#ffffff;
-  --bg-button: #F5F4FA;
-  --background-hero: #2F303A ;
-  --icon-color: #AFB1B8;
-}
-
 body {
   color: var(--text-color);
   font-family: Roboto, sans-serif;
@@ -71,15 +60,20 @@ a {
 
 .button {
   align-items: center;
+  cursor: pointer;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  background-color: var(--accent-color);
-  color: var(--white-color);
-  cursor: pointer;
+  background-color: #2196F3;
+  color: #ffffff;
 }
 
-.button.text {
+.button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
@@ -221,8 +215,7 @@ a {
   color: var(--title-text-color);
 }
 
-/* стилизация hero */
-.section.hero {
+.hero {
   padding-top: 200px;
   padding-bottom: 200px;
   flex-direction: column;
@@ -233,15 +226,15 @@ a {
   background-size: cover;
 }
 
-.hero-title {
-  margin-bottom: 30px;
-  text-align: center;
-  color: var(--white-color);
+.hero__title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  font-weight: 900;
+  text-align: center;
+  margin-bottom: 30px;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
 /* стилизация section about me */
@@ -286,33 +279,36 @@ a {
   line-height: 1.71;
 }
 
-/* стилизация section чем мы занимаемся */
 .whatdoing {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.whatdoing-title {
-  margin-bottom: 50px;
-  color: var(--title-text-color);
+.whatdoing__title {
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 50px;
+  color: #212121;
 }
 
-.img-doing {
-  display: block;
+.doing {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.doing-inage {
+.doing__image {
   position: relative;
 }
 
-.doing-inage:not(:last-child) {
+.doing__image:not(:last-child) {
   margin-right: 30px;
 }
 
-.whatdoing-text {
+.doing__text {
   bottom: 0;
   position: absolute;
   display: flex;
@@ -321,18 +317,14 @@ a {
   align-items: center;
   width: 370px;
   height: 70px;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   background: rgba(47, 48, 58, 0.8);
-  color: var(--white-color);
-}
-
-.doing {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  color: #ffffff;
 }
 
 /* стилизация section наша команда */
