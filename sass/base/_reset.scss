@@ -1,5 +1,5 @@
 body{
-   color:var(--text-color);
+   color: $text;
    font-family: Roboto, sans-serif;  
    letter-spacing: 0.03em;
 }
@@ -23,7 +23,7 @@ li{
 }
 img{
    display: block;
-   min-width: 100%; 
+   max-width: 100%; 
 } 
 a{
    text-decoration: none;

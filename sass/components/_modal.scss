@@ -12,7 +12,7 @@
    position: absolute;
    width: 528px;
    height: 581px;
-   background: #FFFFFF;
+   background: $white;
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
    left: 50%;
@@ -26,14 +26,14 @@
 
 &:focus,
 &:hover{
-   fill: var(--accent-color);
+   fill: $accent;
 }
 }
 
 .btn-open{
    width: 30px;
    height: 30px;
-   background: #FFFFFF;
+   background: $white;
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
    position: absolute;
@@ -63,7 +63,7 @@
    font-size: 20px;
    line-height: 1.15;
    text-align: center;
-   color: var(--title-text-color);
+   color: $title-text;
    margin-bottom: 12px;
 } 
 .modal-form-input{  
@@ -77,12 +77,12 @@
    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    &:focus,
    &:hover{
-      border: 1px solid var(--accent-color);
+      border: 1px solid $accent;
      
    }
    &:focus  ~ .modal-form-icon,
    &:hover  ~ .modal-form-icon{
-      fill: var(--accent-color)
+      fill: $accent;
    }
 }
 
@@ -90,7 +90,7 @@
    font-size: 12px;
    line-height: 1.67;
    letter-spacing: 0.01em;    
-   color: var(--text-color);
+   color: $text;
    display: block;   
 }
 .modal-form-icon{
@@ -101,7 +101,7 @@
    left: 15px;
    transform: translateY(-50%);
 
-   fill: var(--title-text-color); 
+   fill: $title-text; 
    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -123,8 +123,8 @@
    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
    &:hover,
    &:focus{
-      border: 1px solid var(--accent-color);
-      fill: var(--accent-color);
+      border: 1px soli$accent;
+      fill: $accent;
    }
 
 &::placeholder{
@@ -140,7 +140,7 @@
    
    font-size: 14px;
    line-height: 1.71;
-   color: var(--text-color)
+   color: $text;
 } 
 .icon-dogovor{
 	width: 15px;
@@ -153,27 +153,19 @@
 	justify-content: center;
 &:hover,
 &:focus{
-	fill: var(--accent-color);
+	fill: $accent;
 }	
 } 
 .checkbox:focus + .check-lable > .icon-dogovor {
-	border: 2px solid var(--accent-color);
+	border: 2px solid $accent;
 }
 
 .dogovor{
-   color: var(--accent-color);
+   color: $accent;
 }
 
 .checkbox.is-hidden{   
-   /* position: relative;
-   width: 1px;
-   height: 1px;
-   margin: -1px;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   overflow: hidden; */
-   position: absolute;
+      position: absolute;
    appearance: none;
    -webkit-appearance: none;
    -moz-appearance: none;
@@ -181,7 +173,7 @@
 
 
 .checkbox:checked + .check-lable > .icon-dogovor {
-	background: var(--accent-color);
+	background: $accent;
    border: none;
 
 }
@@ -194,7 +186,7 @@
 
    display: block; 
    margin: 0 auto;  
-   background: var(--accent-color);
+   background: $accent;
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    border: none; 
