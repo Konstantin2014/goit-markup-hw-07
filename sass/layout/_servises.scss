@@ -3,17 +3,11 @@
    padding-bottom: 94px;
 }
 
-.servises__title{ 
-	@include font(normal, bold, 36px, 1.16, 0.03em, $title-text);
 
-   margin-bottom: 50px;  
-
-   text-align: center;
-}
 .servises__list{
    display: flex;
 }
- 
+
 
 .servises__item{	
 	position: relative;

@@ -6,14 +6,6 @@
    background: $bg-button;
 }
 
-.ourteam__title{ 
-	@include font(normal, bold, 36px, 1.16, 0.03em, $title-text);
-   
-	margin-bottom: 50px;
-
-   text-align: center;
-}
-
 .ourteam__list{   
    display: flex;
    flex-wrap: wrap;
@@ -29,12 +21,12 @@
    border-radius: 0px 0px 4px 4px;
 }
 
-.content-people{    
+.ourteam__box{    
    padding-top: 30px;
    padding-bottom: 30px;
-   align-items: center;  
+   
 }
-.content-people__name{
+.ourteam__name{
 	@include font(normal, 500, 16px, 1.19, 0.03em, $title-text);
    
 	text-align: center;
@@ -42,7 +34,7 @@
    margin-bottom: 10px;
 
 }
-.content-people__work{
+.ourteam__position{
 	@include font(normal, 500, 16px, 1.19, 0.03em, $text);
    
 	text-align: center;
