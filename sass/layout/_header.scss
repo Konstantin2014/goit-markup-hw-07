@@ -5,7 +5,7 @@
    @include centerFlex;
 }
 
-.site-nav{	
+.site-nav{   
 	margin-left: 93px; 
 }
 
@@ -31,6 +31,7 @@
 
 .site-nav__link:hover,
 .site-nav__link:focus {
+   position: relative;
    color: $accent;   
 }
 
@@ -43,16 +44,17 @@
    width: 48px;
    height: 4px;   
    top: 76px;
-   background-color: $accent;
+   color: $accent;
+   background-color: $accent;  
    border-radius: 2px;
 }
 
-.item .link.studio,
-.item .link.portfolio{
+.site-nav__link.studio,
+.site-nav__link.portfol{
    color: $accent;  
 }
 
-.item .link.portfolio::after{
+.site-nav__link.portfol::after{
    content: " ";
    display: block;
    position: absolute;
